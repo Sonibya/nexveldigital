@@ -1,20 +1,25 @@
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Nexvel Digital Group</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<!-- aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	 <nav>
-		<div class="logo">
+		<div class="logo" data-aos="fade-down">
 		  <img src="img/logo.png" alt="">
 		</div>
    	</nav>
    	<section>
-   		<p class="h1">WE MAKE DIGITAL THINGS <br>
+   		<p class="h1"  data-aos="fade-right">WE MAKE DIGITAL THINGS <br>
 		MORE FUN AND LIVELY WITH CREATIVITY</p>
 
-		<div class="group1">
+		<div class="group1"  data-aos="zoom-in">
 			<img src="img/control.png">
 			<img src="img/click.png">
 			<img src="img/news.png">
@@ -25,14 +30,22 @@
 		</div>
 
 		<div class="group2">
-			<a href="#" id="join">JOIN US</a>
-			<a href="#" id="learn">LEARN MORE</a>
-			<a href="#" id="contact">CONTACT US</a>
+			<a href="#" id="join" data-aos="fade-right">JOIN US</a>
+			<a href="#" id="learn" data-aos="fade-left">LEARN MORE</a>
+			<a href="#" id="contact" data-aos="fade-up-right">CONTACT US</a>
 		</div>
 
-		<div class="group3">
+		<div class="group3"  data-aos="zoom-out">
 			<img src="img/business.png">
 		</div>
    	</section>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
