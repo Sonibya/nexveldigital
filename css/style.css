@@ -3,6 +3,7 @@
 body{
   background-image: url('../img/bd.png');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 nav .logo img{
   width: 150px;
@@ -57,6 +58,10 @@ section{
   margin: 10px;
 }
 
+#join:hover, #learn:hover, #contact:hover{
+  background-color: grey;
+}
+
 #learn{
   color: white;
   width: 150px;
@@ -84,6 +89,9 @@ section{
 
 /*responsive*/
 
+
+/*Monitor Besar*/
+
 @media (min-width: 1500px){
   section .h1{
     font-size: 70px;
@@ -110,6 +118,57 @@ section{
     font-weight: 700;
   }
 
-  
+
 }
+
+  /*Tablet / Mobile*/
+@media (max-width: 800px){ 
+
+  section .h1{
+    font-size: 35px;
+    text-align: left;
+    padding: 0px 30px 0px 30px;
+
+
+  }
+
+
+  section{
+    justify-content: none;
+    align-items: flex-start;
+
+  }
+
+  section .group1{
+    padding-left: 30px;
+    width: 70%;
+    /*border: 2px yellow solid;*/
+  }
+
+  .group1 img{
+    width: 18px;
+  }
+
+  section .group2{
+    flex-direction: column;
+    margin: 50px auto;
+    width: 70%;
+
+  }
+
+  #join, #learn, #contact{
+    /*width: 250px;*/
+    font-size: 18px;
+
+  }
+
+  section .group3 img{
+    width: 100%;
+    /*position: absolute;*/
+    bottom: 50;
+  }
+
+
+}
+
 
